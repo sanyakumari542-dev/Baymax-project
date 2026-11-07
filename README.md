@@ -23,6 +23,6 @@ Requires Python 3. No extra packages.
 
 ## Roadmap
 - [x] Level 0: terminal Baymax with pain check, menu, and exit flow
-- [ ] Level 1: scan that uses your pain score
+- [ ] Level 1: animated web face and inflating loading screen
 - [ ] Level 2: coming soon
 - [ ] Level 3: real medicine reminders
