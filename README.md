@@ -4,7 +4,7 @@ Building a Baymax-style health assistant in public, one level at a time.
 
 ## Current level: 1 (web face, in progress)
 
-![Level 1 screenshot](level1.png)
+![BAYMAX waving](wave.gif)
 
 An SVG Baymax that blinks, tilts his head in confusion, and waves hi when you click a button.
 
