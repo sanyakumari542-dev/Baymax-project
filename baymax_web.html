@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> BAYMAX </title>
+    <link rel="icon" type="image/png" href="/images/maxicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section>
+        <svg width="600" height="600" viewbox="0 0 600 600" overflow="visible">
+            <circle cx="300" cy="520" r="318" fill="white"></circle>
+            <path class="arm1" d="M 95 350 Q 40 480 55 647" stroke="grey" stroke-width="2" fill="none"></path>
+            <path class="arm2" d="M 495 350 Q 550 480 535 647" stroke="grey" stroke-width="2" fill="none"></path>
+            <circle class="chip_socket" cx="430" cy="370" r="19" fill="white" stroke="grey" stroke-width="1"></circle>
+            <path class="slot" d="M 411 372 L 420 372 L 422 364 L 437 364 L 439 372 L 449 372" stroke="grey"
+                stroke-width="1" fill="none"></path>
+            <g class="wave_hi">
+                <path class="arm" d="M 50 410 Q 90 90 -90 260 -180 370 -130 530 -90 600 -70 604 -60 610 0 615"
+                    stroke="grey" stroke-width="3" stroke-linecap="round" fill="white"></path>
+                <path class="fin1" d="M -9 200 Q -18 167 1 137 10 135 12 136 30 136 35 216" stroke="grey"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="white"></path>
+                <path class="fin2" d="M -55 228 Q -60 170 -44 143 -35 140 -33 140 -15 150 -10 209" stroke="grey"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="white"></path>
+                <path class="fin3" d="M -100 267 Q -108 240 -89 160 -80 155 -78 157 -60 161 -55 233 " stroke="grey"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="white"></path>
+                <path class="thumb" d="M 39 279 Q 80 240 75 210 Q 55 185 29 229" stroke="grey" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round" fill="white"></path>
+
+            </g>
+
+            <g class="head">
+                <ellipse class="baymax_head" cx="290" cy="140" rx="140" ry="100" stroke="grey" fill="white"></ellipse>
+                <circle class="eye1" cx="240" cy="130" r="15"></circle>
+                <circle class="eye2" cx="350" cy="130" r="15"></circle>
+                <line class="eye_line" x1="255" y1="130" x2="335" y2="130" stroke="black" stroke-width="4"></line>
+
+            </g>
+
+        </svg>
+
+    </section>
+
+    <script>
+
+        function baymaxSayHi() {
+            const waveGroup = document.querySelector('.wave_hi')
+            waveGroup.classList.add('active');
+            setTimeout(() => {
+                waveGroup.classList.remove('active');
+            }, 1500);
+        }
+
+    </script>
+
+    <button onclick="baymaxSayHi()" class="wave-btn">👋wave hi!!</button>
+
+</body>
+
+</html>
